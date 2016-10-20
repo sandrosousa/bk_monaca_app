@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' * https://maps.googleapis.com https://maps.gstatic.com; style-src  'self' 'unsafe-inline' *"> 
+   <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;"> -->
+   <meta http-equiv="content_security_policy" content="script-src 'self' 'unsafe-eval'; object-src 'self'">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
+     <!-- ng-cordova extension 
+    <script src="js/ng-cordova.min.js"></script> -->
+    
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+
+    <!-- cordova script (this will be a 404 during development) 
+    <script src="cordova.js"></script> -->
+
+    <!-- your app's js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV5pjtGKm_rOkTaKJElwjXveEQ6Sv1Dqs"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    <script src="app/controllers/ctlMap.js"></script>
+    <script src="app/services/services.js"></script>
+    
+  </head>
+
+  <body ng-app="starter">
+    <ion-nav-view>
+    </ion-nav-view>    
+  </body>
+</html>
