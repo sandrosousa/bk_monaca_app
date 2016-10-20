@@ -1,7 +1,5 @@
 angular.module('starter.ctlMap', [])
 
-
-
 .controller('ctlMap', function($scope, $state, $cordovaGeolocation) {
   
   var options = {timeout: 10000, enableHighAccuracy: true};
